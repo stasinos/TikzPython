@@ -17,8 +17,12 @@ TEX_FILE = r"""%!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 \usetikzlibrary{
     hobby,
     decorations.pathreplacing,
-    decorations.markings
+    decorations.markings,
+    backgrounds
 }
+
+\pgfdeclarelayer{background}
+\pgfsetlayers{background, main}
 
 \begin{document}
 \pagestyle{empty} % no page numbers
